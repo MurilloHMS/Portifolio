@@ -39,3 +39,25 @@
     background: $secondary-color;
     border-radius: 20px;
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Empilha logo e menu */
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column; /* Menu em coluna */
+        gap: 10px;
+    }
+
+    .menu li {
+        margin: 5px 0; /* Reduz espaço entre itens */
+    }
+
+    .menu a {
+        padding: 10px 20px; /* Aumenta o espaço clicável */
+    }
+}
