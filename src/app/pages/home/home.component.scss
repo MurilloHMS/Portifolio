@@ -143,59 +143,90 @@ p {
     text-align: center;
     margin: 2rem 0;
     color: white;
-  
-    h2 {
-      font-size: 2.5rem;
-      color: #007bff; // Azul para combinar com o design
-      margin-bottom: 2rem;
-    }
-  
-    .experience {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      
-      
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-  
-      .experience-item {
-        display: flex;
-        align-items: center;
-        background-color: #1e1e1e;
-        border-radius: 10px;
+}
+
+.experience-section h2 {
+    font-size: 2.5rem;
+    color: #007bff; /* Azul para combinar com o design */
+    margin-bottom: 2rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column; /* Alinha verticalmente, uma abaixo da outra */
+    gap: 2rem; /* Espaçamento entre os itens */
+    padding: 0 1rem; /* Margens laterais */
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: row; /* Imagem ao lado do texto */
+    align-items: flex-start;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover {
+    transform: scale(1.02); /* Leve aumento ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.experience-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    flex-shrink: 0; /* Evita que a imagem seja redimensionada */
+    border-radius: 5px; /* Leve arredondamento na imagem */
+}
+
+.experience-info {
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.experience-info h3 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.experience-info .date {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.experience-info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #ddd;
+}
+
+.experience-info ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column; /* Alinha verticalmente */
+        text-align: center; /* Centraliza o conteúdo */
         padding: 1rem;
-        width: 70%;
-        
-  
-        img {
-          width: 50px;
-          height: 50px;
-          margin-right: 1rem;
-        }
-  
-        .experience-info {
-          text-align: left;
-  
-          h3 {
-            font-size: 1.2rem;
-            color: white;
-          }
-  
-          .date {
-            font-size: 0.9rem;
-            color: #aaa;
-            margin-bottom: 0.5rem;
-          }
-  
-          p {
-            font-size: 0.9rem;
-          }
-        }
-      }
     }
-  }
+
+    .experience-item img {
+        margin: 0 auto 1rem; /* Centraliza a imagem e adiciona margem inferior */
+    }
+
+    .experience-info {
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
   
   @media (max-width: 768px) {
     .home {
