@@ -5,9 +5,9 @@
         <img [src]="cert.imagem" [alt]="cert.nome" />
         <div class="certificado-info">
           <h3>{{ cert.nome }}</h3>
-          <p><strong>Organização Emissora:</strong> {{ cert.organizacaoEmissora }}</p>
-          <p><strong>Data de Emissão:</strong> {{ cert.dataEmissao }}</p>
-          <p><strong>Código da Credencial:</strong> {{ cert.codigoCredencial }}</p>
+          <p><strong>Emissor:</strong> {{ cert.organizacaoEmissora }}</p>
+          <p><strong>Emissão:</strong> {{ cert.dataEmissao }}</p>
+          <!-- <p><strong>Código da Credencial:</strong> {{ cert.codigoCredencial }}</p> -->
           <a [href]="cert.urlCredencial" target="_blank" class="visit-link">Ver Credencial →</a>
         </div>
       </div>
