@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="title">{{ title }}</h2>
+  
+    <section class="section">
+      <h3 class="subtitle">Sobre</h3>
+      <p class="text">{{ about }}</p>
+    </section>
+  
+    <section class="section">
+      <h3 class="subtitle">Propósito</h3>
+      <p class="text">{{ purpose }}</p>
+    </section>
+  
+    <section class="section">
+      <h3 class="subtitle">Problemas Resolvidos</h3>
+      <p class="text">{{ problemsSolved }}</p>
+    </section>
+  
+    <div class="image-gallery">
+      <img *ngFor="let image of images" [src]="image" alt="Project Image" class="image" />
+    </div>
+  </div>
+  
