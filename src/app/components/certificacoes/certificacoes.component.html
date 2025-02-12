@@ -2,7 +2,7 @@
     <h2>CERTIFICAÇÕES</h2>
     <div class="certificados">
       <div class="certificado-card" *ngFor="let cert of certificacoes">
-        <img [src]="cert.imagem" [alt]="cert.nome" />
+        <img [src]="cert.imagem" [alt]="cert.nome" loading="lazy" />
         <div class="certificado-info">
           <h3>{{ cert.nome }}</h3>
           <p><strong>Emissor:</strong> {{ cert.organizacaoEmissora }}</p>

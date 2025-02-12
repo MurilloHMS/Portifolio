@@ -1,9 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { ApresentacaoProjetosComponent } from '../../components/apresentacao-projetos/apresentacao-projetos.component';
 
 @Component({
   selector: 'app-khora-note',
   standalone: true,
-  imports: [],
+  imports: [ApresentacaoProjetosComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './khora-note.component.html',
   styleUrl: './khora-note.component.scss'
 })
