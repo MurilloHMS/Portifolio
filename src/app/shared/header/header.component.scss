@@ -6,6 +6,7 @@
     align-items: center;
     padding: 10px 20px;
     background: $primary-color;
+    animation: slideDown 0.4s ease-in-out;
 }
 
 .logo img{
@@ -26,19 +27,36 @@
 
 .menu a{
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s;
     color: $text-primary-color;
     padding: 8px 15px;
+    position: relative;
     
 }
 
 .menu a:hover{
-    color: $primary-color;
+    color: $secondary-color;
     cursor: pointer;
-    background: $secondary-color;
-    border-radius: 20px;
 }
+
+.menu a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: $secondary-color;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.menu a:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
 
 @media (max-width: 768px) {
     .header {
@@ -59,5 +77,16 @@
 
     .menu a {
         padding: 10px 20px; /* Aumenta o espaço clicável */
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
