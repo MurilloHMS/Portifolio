@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
     {
       title: 'Site Proauto Kimium',
       description:
-        'Plataforma de e-commerce completa com catálogo de produtos, sistema de pedidos e integração com ERP.',
+        'Plataforma online para demonstração de produtos e serviços, integração com sistemas de gestão e automações de processos.',
       image: '../../../assets/images/site_proauto.png',
       technologies: ['Angular', 'Java', 'API REST', 'Spring Boot'],
       link: 'https://proautokimium.com.br',
