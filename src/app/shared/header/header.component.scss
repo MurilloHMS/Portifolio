@@ -1,5 +1,14 @@
 @import '../../../style/variables.scss';
 
+
+$primary-gradient: linear-gradient(135deg, #ff6a00, #ee0979);
+$secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$dark-bg: #0a0a0a;
+$card-bg: #1a1a1a;
+$text-primary: #ffffff;
+$text-secondary: #b0b0b0;
+$accent: #ff6a00;
+
 .header{
     display: flex;
     justify-content: space-evenly;
@@ -32,7 +41,7 @@
     color: $text-primary-color;
     padding: 8px 15px;
     position: relative;
-    
+
 }
 
 .menu a:hover{
@@ -89,4 +98,51 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+// Navigation
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 106, 0, 0.2);
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: $primary-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+
+      a {
+        color: $text-primary;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
 }
