@@ -71,6 +71,14 @@ export class HomeComponent implements OnInit {
       link: '/projetos/khora-note',
       external: false,
     },
+    {
+      title: 'Kimium Connect',
+      description: 'Sistema de envio de emails automáticos para clientes e funcionários. Responsável por melhorar a comunicação e envio de informações importantes para clientes.',
+      image: '../../../assets/images/KimiumConnect/kc1.png',
+      technologies: ['Java', 'API REST', 'Spring Boot', 'JavaFx'],
+      link: '/projetos/kimium-connect',
+      external: false,
+    }
   ];
   experiences: Experience[] = [
     {
