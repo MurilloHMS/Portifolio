@@ -49,7 +49,7 @@ export class HomeComponent implements OnInit {
       description:
         'Sistema completo de gestão de estoque com dashboards em tempo real, controle de inventário e relatórios automatizados.',
       image: '../../../assets/images/CdePk.png',
-      technologies: ['Java', 'JavaFx', 'SQL Server', 'JasperReports'],
+      technologies: ['Java', 'JavaFX', 'PostgreSQL', 'SpringBoot', 'RestApi'],
       link: '/projetos/controle-estoque',
       external: false,
     },
@@ -59,8 +59,8 @@ export class HomeComponent implements OnInit {
         'Plataforma online para demonstração de produtos e serviços, integração com sistemas de gestão e automações de processos.',
       image: '../../../assets/images/site_proauto.png',
       technologies: ['Angular', 'Java', 'API REST', 'Spring Boot'],
-      link: 'https://proautokimium.com.br',
-      external: true,
+      link: '/projetos/site-proauto',
+      external: false,
     },
     {
       title: 'Khora Note',
@@ -77,6 +77,22 @@ export class HomeComponent implements OnInit {
       image: '../../../assets/images/KimiumConnect/kc1.png',
       technologies: ['Java', 'API REST', 'Spring Boot', 'JavaFx'],
       link: '/projetos/kimium-connect',
+      external: false,
+    },
+    {
+      title: 'Vt Manager',
+      description: 'Sistema de gestão de Vale Transporte. Automatizando o cálculo dos vales dos funcionários e impressão dos comprovantes.',
+      image: '../../../assets/images/RedoManager/rm1.png',
+      technologies: ['Java', 'JavaFX', 'JasperReports', 'SqLite'],
+      link: '/projetos/vt-manager',
+      external: false,
+    },
+    {
+      title: 'Alternar BI',
+      description: 'Sistema para alternar paginas no power bi',
+      image: '../../../assets/images/Alternar BI/ab1.png',
+      technologies: ['Java', 'JavaFX'],
+      link: '/projetos/alternar-bi',
       external: false,
     }
   ];
