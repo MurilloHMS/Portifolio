@@ -2,13 +2,13 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApresentacaoProjetosComponent } from '../../components/apresentacao-projetos/apresentacao-projetos.component';
 
 @Component({
-  selector: 'app-site-proauto',
+  selector: 'app-vt-manager',
   standalone: true,
   imports: [ApresentacaoProjetosComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './site-proauto.component.html',
-  styleUrl: './site-proauto.component.scss'
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  templateUrl: './vt-manager.component.html',
+  styleUrl: './vt-manager.component.scss'
 })
-export class SiteProautoComponent {
+export class VtManagerComponent {
 
 }

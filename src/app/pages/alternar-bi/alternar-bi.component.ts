@@ -2,13 +2,13 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApresentacaoProjetosComponent } from '../../components/apresentacao-projetos/apresentacao-projetos.component';
 
 @Component({
-  selector: 'app-site-proauto',
+  selector: 'app-alternar-bi',
   standalone: true,
   imports: [ApresentacaoProjetosComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  templateUrl: './site-proauto.component.html',
-  styleUrl: './site-proauto.component.scss'
+  templateUrl: './alternar-bi.component.html',
+  styleUrl: './alternar-bi.component.scss'
 })
-export class SiteProautoComponent {
+export class AlternarBiComponent {
 
 }
